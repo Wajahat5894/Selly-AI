@@ -41,7 +41,7 @@ const NavBar = () => {
         </ul>
 
         <div className={`flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 mt-4 md:mt-0 ${isOpen ? 'block' : 'hidden md:flex'}`}>
-          <Button className="border border-gray-800 text-gray-800 hover:bg-gray-300 hover:text-black text-sm px-6 py-1 rounded-full">
+          <Button className="border border-gray-800 text-gray-800 bg-gray-200 hover:bg-black hover:text-white text-sm px-6 py-2 rounded-full transition-colors duration-300">
             <Link href="/login">Login</Link>
           </Button>
           <Button className="bg-black text-white hover:bg-gray-800 text-sm px-6 py-1 rounded-full">

@@ -152,6 +152,13 @@ export async function GET(request: Request) {
 }
 
 export async function POST(request: Request) {
-  // Ihre Logik hier
-  return NextResponse.json({ message: 'Stripe Connect API POST request received' })
+  try {
+    const body = await request.json();
+    // Implementieren Sie hier die Stripe Connect-Logik
+    // z.B. Stripe-Konto erstellen, Verbindung herstellen, etc.
+    return NextResponse.json({ success: true, message: 'Stripe Connect account created' });
+  } catch (error) {
+    console.error('Error in Stripe Connect:', error);
+    return NextResponse.json({ success: false, message: 'Error creating Stripe Connect account' }, { status: 500 });
+  }
 }

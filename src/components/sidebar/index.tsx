@@ -22,11 +22,8 @@ const SideBar = ({ domains }: Props) => {
   return (
     <div
       className={cn(
-        'bg-cream dark:bg-neutral-950 h-full w-[60px] fill-mode-forwards fixed md:relative',
-        expand == undefined && '',
-        expand == true
-          ? 'animate-open-sidebar'
-          : expand == false && 'animate-close-sidebar'
+        'bg-cream dark:bg-neutral-950 h-full w-[60px] fixed left-0 top-0 transition-all duration-300', // Breite beibehalten
+        expand ? 'w-64' : 'w-[60px]' // Breite beim Ausklappen ändern
       )}
     >
       {expand ? (

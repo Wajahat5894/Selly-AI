@@ -3,7 +3,7 @@ import { useAuthContextHook } from '@/context/use-auth-context'
 import React, { useState } from 'react'
 import { useFormContext } from 'react-hook-form'
 import TypeSelectionForm from './type-selection-form'
-import Spinner from '@/components/ui/Spinner' // Passen Sie diesen Pfad an den tatsächlichen Speicherort der Spinner-Komponente an
+import Spinner from '@/components/ui/Spinner'
 import AccountDetailsForm from './account-details-form'
 import OTPForm from './otp-form'
 
